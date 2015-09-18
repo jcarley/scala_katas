@@ -12,7 +12,9 @@ set +e
 docker-machine status dev &>/dev/null
 
 if [ $? != 0 ]; then
-  docker-machine create --driver vmwarefusion dev
+  echo "# A docker capable vm not found."
+  echo "# Creating vm and waiting for it to come online..."
+  docker-machine create --driver vmwarefusion dev &>/dev/null
 fi
 
 if test $(docker-machine status dev) == "Stopped"; then
@@ -30,6 +32,9 @@ export DOCKER_MACHINE_IP=$docker_machine_ip
 echo "# Machine is online.  Starting up docker containers for dev environment."
 echo "# Please be patient, this may take awhile."
 docker-compose up -d &>/dev/null
+
+echo "# You can access the RMQ server on: "
+echo "#   $(docker inspect -f {{.NetworkSettings.IPAddress}} $(docker-compose ps -q)):5672"
 
 echo "# You are all set.  Dev away."
 
