@@ -35,6 +35,9 @@ docker-compose up -d &>/dev/null
 
 echo "# You can access the RMQ server on: "
 echo "#   $DOCKER_MACHINE_IP:5672"
+echo "# Log into the rmq management console by browsing to: "
+echo "#   http://$DOCKER_MACHINE_IP:15672 "
+echo "# and log in with the username: dev, password: dev "
 
 echo "# You are all set.  Dev away."
 
