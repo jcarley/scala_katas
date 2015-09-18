@@ -4,7 +4,7 @@ organization := "com.example"
 
 version := "0.0.1"
 scalaVersion := "2.11.5"
-val json4sVersion = "3.2.10"
+json4sVersion := "3.2.10"
 
 libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-native" % json4sVersion,
