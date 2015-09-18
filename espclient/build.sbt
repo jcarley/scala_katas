@@ -12,8 +12,8 @@ libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-native" % json4sVersion,
   "org.json4s" %% "json4s-ext" % json4sVersion,
   "org.json4s" %% "json4s-jackson" % json4sVersion,
-  "net.databinder.dispatch" %% "dispatch-core" % "0.11.2",
   "org.apache.httpcomponents" % "httpclient" % "4.5",
+  "org.apache.httpcomponents" % "fluent-hc" % "4.5",
   "org.apache.commons" % "commons-lang3" % "3.4",
   "org.scalatest" %% "scalatest" % "2.2.1" % "test",
   "org.scalacheck" %% "scalacheck" % "1.12.1" % "test"
