@@ -34,7 +34,7 @@ echo "# Please be patient, this may take awhile."
 docker-compose up -d &>/dev/null
 
 echo "# You can access the RMQ server on: "
-echo "#   $(docker inspect -f {{.NetworkSettings.IPAddress}} $(docker-compose ps -q)):5672"
+echo "#   $DOCKER_MACHINE_IP:5672"
 
 echo "# You are all set.  Dev away."
 
