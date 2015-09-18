@@ -4,8 +4,8 @@ rmq:
     - "15672:15672"
     - "5672:5672"
   environment:
-    RABBITMQ_DEFAULT_USER: jcarley
-    RABBITMQ_DEFAULT_PASS: letmein123
+    RABBITMQ_DEFAULT_USER: dev
+    RABBITMQ_DEFAULT_PASS: dev
   labels:
     com.example.description: "rmq"
 
