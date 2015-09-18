@@ -27,5 +27,9 @@ docker_machine_ip=$(docker-machine ip dev)
 
 export DOCKER_MACHINE_IP=$docker_machine_ip
 
+echo "# Machine is online.  Starting up docker containers for dev environment."
+echo "# Please be patient, this may take awhile."
+docker-compose up -d &>/dev/null
+
 echo "# You are all set.  Dev away."
 
