@@ -26,7 +26,6 @@ echo "# Running the \`docker-machine env\` command."
 eval "$(docker-machine env dev)"
 
 docker_machine_ip=$(docker-machine ip dev)
-
 export DOCKER_MACHINE_IP=$docker_machine_ip
 
 echo "# Machine is online.  Starting up docker containers for dev environment."

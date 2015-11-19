@@ -1,0 +1,8 @@
+
+Non-threaded
+------------------
+Number of files found: 131322
+Time taken: 12.573247173 seconds
+
+
+

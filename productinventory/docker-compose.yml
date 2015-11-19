@@ -6,6 +6,4 @@ rmq:
   environment:
     RABBITMQ_DEFAULT_USER: dev
     RABBITMQ_DEFAULT_PASS: dev
-  labels:
-    com.example.description: "rmq"
 
